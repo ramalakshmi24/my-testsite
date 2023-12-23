@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 16px;
 }
 
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
+  border: 1px solid var(--highlight-background-color);
   background-color: var(--background-color)
 }
 
@@ -28,4 +28,29 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.cards > ul > li img:hover {
+  opacity: 0.60;
+}
+
+.cards p {
+  font-size: 18px;
+}
+
+.cards strong {
+  font-size: 24px;
+}
+
+.cards em {
+  color: #746e6e;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.cards a.button {
+  background-color: #000;
+    border: none;
+    border-radius: 0;
+    font-weight: normal;
 }
